@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "projeto_logistica"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f2acab04-324d-4c0f-b369-b9174f31f8a3"
+  }
+}

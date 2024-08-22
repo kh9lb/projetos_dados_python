@@ -1,0 +1,282 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleTidal\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleTidal",
+            "path": "BuiltInThemes/AccessibleTidal.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Visão Pontos de Venda",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1397a1dd932dae2c0e5e",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"86c5d469b0b1d0a4e305\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.720000000000002,\"y\":97.92,\"z\":1000,\"width\":1236.96,\"height\":300.96000000000004,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosMarketing.Pais\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(DadosMarketing.Gasto com Alimentos)\"},{\"queryRef\":\"Sum(DadosMarketing.Gasto com Brinquedos)\"},{\"queryRef\":\"Sum(DadosMarketing.Gasto com Eletronicos)\"},{\"queryRef\":\"Sum(DadosMarketing.Gasto com Moveis)\"},{\"queryRef\":\"Sum(DadosMarketing.Gasto com Utilidades)\"},{\"queryRef\":\"Sum(DadosMarketing.Gasto com Vestuario)\"}],\"Y2\":[{\"queryRef\":\"CountNonNull(DadosMarketing.ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"DadosMarketing.Pais\",\"NativeReferenceName\":\"Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Alimentos\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Alimentos)\",\"NativeReferenceName\":\"Soma de Gasto com Alimentos\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Brinquedos\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Brinquedos)\",\"NativeReferenceName\":\"Soma de Gasto com Brinquedos\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Eletronicos\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Eletronicos)\",\"NativeReferenceName\":\"Soma de Gasto com Eletronicos\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Moveis\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Moveis)\",\"NativeReferenceName\":\"Soma de Gasto com Moveis\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Utilidades\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Utilidades)\",\"NativeReferenceName\":\"Soma de Gasto com Utilidades\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Vestuario\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Gasto com Vestuario)\",\"NativeReferenceName\":\"Soma de Gasto com Vestuario\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.ID)\",\"NativeReferenceName\":\"Contagem de ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gasto com Alimentos\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Gastos em Diferentes Categorias por País'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.96,
+          "width": 1236.96,
+          "x": 18.72,
+          "y": 97.92,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"8bea320d675e907e03bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":142.56,\"y\":0,\"z\":0,\"width\":1009.44,\"height\":97.92,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Projeto de Marketing - Análise de campanha de marketing\",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}},{\"value\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"textStyle\":{\"fontSize\":\"24pt\"}},{\"value\":\"Visão dos Padrões de Compra por Ponto de Venda\",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.92,
+          "width": 1009.44,
+          "x": 142.56,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e1033f1de27b52024e9c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.720000000000002,\"y\":419.04,\"z\":2000,\"width\":1236.96,\"height\":285.12,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"DadosMarketing.TotalGasto\"}],\"Series\":[{\"queryRef\":\"DadosMarketing.Pais\"}],\"Category\":[{\"queryRef\":\"DadosMarketing.Data Cadastro.Variation.Hierarquia de datas.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"},\"Name\":\"DadosMarketing.TotalGasto\",\"NativeReferenceName\":\"TotalGasto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"DadosMarketing.Pais\",\"NativeReferenceName\":\"Pais\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Data Cadastro\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"DadosMarketing.Data Cadastro.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Cadastro Ano\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Data Cadastro\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Gastos por Ano e Pais'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 285.12,
+          "width": 1236.96,
+          "x": 18.72,
+          "y": 419.04,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Visão Cliente",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a82fa1ede47705380450",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"247e0b00d42c7480895e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":320.8101265822785,\"z\":7000,\"width\":688.6075949367089,\"height\":319.1898734177215,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(DadosMarketing.ID)\"}],\"Category\":[{\"queryRef\":\"DadosMarketing.Escolaridade\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.ID)\",\"NativeReferenceName\":\"Contagem de ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Escolaridade\"},\"Name\":\"DadosMarketing.Escolaridade\",\"NativeReferenceName\":\"Escolaridade\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"gridlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"gridlineThickness\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Clientes por Escolaridade'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 319.19,
+          "width": 688.61,
+          "x": 0.00,
+          "y": 320.81,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"268e28ae808ebd05959b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":173.36708860759492,\"y\":121.51898734177215,\"z\":1000,\"width\":241.41772151898735,\"height\":187.9493670886076,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Salario Anual)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Salario Anual\"}},\"Function\":1},\"Name\":\"Sum(DadosMarketing.Salario Anual)\",\"NativeReferenceName\":\"Média de Salario Anual\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Salario Anual\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.95,
+          "width": 241.42,
+          "x": 173.37,
+          "y": 121.52,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6bb65ec8a4a30880d3c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1088.8101265822784,\"y\":121.51898734177215,\"z\":4000,\"width\":178.22784810126583,\"height\":184.70886075949366,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Numero de Compras na Web)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras na Web\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Numero de Compras na Web)\",\"NativeReferenceName\":\"Numero de Compras na Web\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras na Web\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(DadosMarketing.Numero de Compras na Web)\":{\"displayName\":\"Numero de Compras na Web\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.71,
+          "width": 178.23,
+          "x": 1088.81,
+          "y": 121.52,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6eaaa1b4d2bbc0852d15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":427.746835443038,\"y\":121.51898734177215,\"z\":2000,\"width\":186.32911392405063,\"height\":187.9493670886076,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Numero de Compras na Loja)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras na Loja\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Numero de Compras na Loja)\",\"NativeReferenceName\":\"Numero de Compras na Loja\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras na Loja\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(DadosMarketing.Numero de Compras na Loja)\":{\"displayName\":\"Numero de Compras na Loja\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.95,
+          "width": 186.33,
+          "x": 427.75,
+          "y": 121.52,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7cb102e5a06de3ee1d57\",\"layouts\":[{\"id\":0,\"position\":{\"x\":627.0379746835443,\"y\":121.51898734177215,\"z\":5000,\"width\":220.35443037974684,\"height\":187.9493670886076,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Numero de Compras com Desconto)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras com Desconto\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Numero de Compras com Desconto)\",\"NativeReferenceName\":\"Numero de Compras com Desconto\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras com Desconto\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(DadosMarketing.Numero de Compras com Desconto)\":{\"displayName\":\"Numero de Compras com Desconto\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.95,
+          "width": 220.35,
+          "x": 627.04,
+          "y": 121.52,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"7cb6cc3de3aac80ed44c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.20253164556962,\"y\":640,\"z\":9000,\"width\":1263.7974683544303,\"height\":79.39240506329114,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DadosMarketing.Pais\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"DadosMarketing.Pais\",\"NativeReferenceName\":\"Pais\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"70L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 79.39,
+          "width": 1263.80,
+          "x": 16.20,
+          "y": 640.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"9bd8f5233ee102a29432\",\"layouts\":[{\"id\":0,\"position\":{\"x\":143.20645905420992,\"y\":0,\"z\":6000,\"width\":1008.3506343713956,\"height\":95.96309111880046,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Projeto de Marketing - Análise de campanha de marketing \",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}},{\"value\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"textStyle\":{\"fontSize\":\"24pt\"}},{\"value\":\"Visão Cliente\",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.96,
+          "width": 1008.35,
+          "x": 143.21,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"b2ba05cd0eb65ab00e00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":722.632911392405,\"y\":320.8101265822785,\"z\":8000,\"width\":544.4050632911392,\"height\":315.9493670886076,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(DadosMarketing.ID)\"}],\"Category\":[{\"queryRef\":\"DadosMarketing.Estado Civil\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.ID)\",\"NativeReferenceName\":\"Contagem de ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Estado Civil\"},\"Name\":\"DadosMarketing.Estado Civil\",\"NativeReferenceName\":\"Estado Civil\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"gridlineTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"gridlineThickness\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Clientes por Estado Civil'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 315.95,
+          "width": 544.41,
+          "x": 722.63,
+          "y": 320.81,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"c8534101c377db820b63\",\"layouts\":[{\"id\":0,\"position\":{\"x\":873.3164556962025,\"y\":121.51898734177215,\"z\":3000,\"width\":199.29113924050634,\"height\":184.70886075949366,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Numero de Compras via Catalogo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras via Catalogo\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Numero de Compras via Catalogo)\",\"NativeReferenceName\":\"Numero de Compras via Catalogo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero de Compras via Catalogo\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(DadosMarketing.Numero de Compras via Catalogo)\":{\"displayName\":\"Numero de Compras via Catalogo\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.71,
+          "width": 199.29,
+          "x": 873.32,
+          "y": 121.52,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e6dcbab8a22a70006132\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":121.51898734177215,\"z\":0,\"width\":158.78481012658227,\"height\":187.9493670886076,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(DadosMarketing.ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.ID)\",\"NativeReferenceName\":\"Número de clientes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5}}}]},\"columnProperties\":{\"CountNonNull(DadosMarketing.ID)\":{\"displayName\":\"Número de clientes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'CenterRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.95,
+          "width": 158.78,
+          "x": 0.00,
+          "y": 121.52,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Visão Comportamento",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "af11fd05bbd9d1d12e1b",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"021d30188e32488ede80\",\"layouts\":[{\"id\":0,\"position\":{\"x\":135.82468281430218,\"y\":0,\"z\":1000,\"width\":1008.3506343713956,\"height\":100.3921568627451,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Projeto de Marketing - Análise de Campanha de Marketing \",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}},{\"value\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"textStyle\":{\"fontSize\":\"24pt\"}},{\"value\":\"Visão Comportamento de Compra do Cliente\",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.39,
+          "width": 1008.35,
+          "x": 135.82,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"187746b6ec02a4e440da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":437.00115340253745,\"z\":2000,\"width\":609.7347174163783,\"height\":255.40945790080738,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"DadosMarketing.TotalGasto\"}],\"Category\":[{\"queryRef\":\"DadosMarketing.Filhos em Casa\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"},\"Name\":\"DadosMarketing.TotalGasto\",\"NativeReferenceName\":\"TotalGasto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Filhos em Casa\"},\"Name\":\"DadosMarketing.Filhos em Casa\",\"NativeReferenceName\":\"Filhos em Casa\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Gasto X Filhos em Casa'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 255.41,
+          "width": 609.73,
+          "x": 0.00,
+          "y": 437.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"695113dc9a28829a19ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":100.3921568627451,\"z\":0,\"width\":609.7347174163783,\"height\":317.4163783160323,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(DadosMarketing.Salario Anual)\",\"active\":true}],\"Y\":[{\"queryRef\":\"DadosMarketing.TotalGasto\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Salario Anual\"},\"Name\":\"Sum(DadosMarketing.Salario Anual)\",\"NativeReferenceName\":\"Salario Anual\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"},\"Name\":\"DadosMarketing.TotalGasto\",\"NativeReferenceName\":\"TotalGasto\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Gasto'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de gasto X Salário Anual'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomRight'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 317.42,
+          "width": 609.73,
+          "x": 0.00,
+          "y": 100.39,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"78c187fa0683a3beda75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":646.643598615917,\"y\":437.00115340253745,\"z\":3000,\"width\":614.163783160323,\"height\":255.40945790080738,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"DadosMarketing.TotalGasto\"}],\"Category\":[{\"queryRef\":\"DadosMarketing.Adolescentes em Casa\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"},\"Name\":\"DadosMarketing.TotalGasto\",\"NativeReferenceName\":\"TotalGasto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Adolescentes em Casa\"},\"Name\":\"DadosMarketing.Adolescentes em Casa\",\"NativeReferenceName\":\"Adolescentes em Casa\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Gasto X Adolescentes em Casa'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 255.41,
+          "width": 614.16,
+          "x": 646.64,
+          "y": 437.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b0dba647702029c920e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":646.643598615917,\"y\":100.3921568627451,\"z\":4000,\"width\":614.163783160323,\"height\":317.4163783160323,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"Analyze\":[{\"queryRef\":\"DadosMarketing.TotalGasto\"}],\"ExplainBy\":[{\"queryRef\":\"DadosMarketing.Estado Civil\",\"active\":true},{\"queryRef\":\"DadosMarketing.Escolaridade\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"},\"Name\":\"DadosMarketing.TotalGasto\",\"NativeReferenceName\":\"TotalGasto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Escolaridade\"},\"Name\":\"DadosMarketing.Escolaridade\",\"NativeReferenceName\":\"Escolaridade\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Estado Civil\"},\"Name\":\"DadosMarketing.Estado Civil\",\"NativeReferenceName\":\"Estado Civil\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"TotalGasto\"}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"DadosMarketing.Estado Civil\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Estado Civil\"}}],\"isPinned\":true,\"AIInformation\":{\"method\":\"MaxSplit\"}},{\"queryRefs\":[\"DadosMarketing.Escolaridade\"],\"isCollapsed\":true,\"isPinned\":true,\"AIInformation\":{\"method\":\"MaxSplit\"}}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Solteiro'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}}}],\"dataLabels\":[{\"properties\":{\"dataLabelFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"categoryLabelFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Estado Civil\"}},\"Right\":{\"Literal\":{\"Value\":\"'Solteiro'\"}}}}}]}},{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Estado Civil\"}},\"Right\":{\"Literal\":{\"Value\":\"'Solteiro'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Escolaridade\"}},\"Right\":{\"Literal\":{\"Value\":\"'Curso Superior'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 317.42,
+          "width": 614.16,
+          "x": 646.64,
+          "y": 100.39,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Visão Campanha",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ce72b45dd3015c6caa08",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"270f61168acbc401a739\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":403.2,\"z\":2000,\"width\":508.32,\"height\":270.72,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosMarketing.Comprou\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(DadosMarketing.Salario Anual)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comprou\"},\"Name\":\"DadosMarketing.Comprou\",\"NativeReferenceName\":\"Comprou\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Salario Anual\"}},\"Function\":1},\"Name\":\"Sum(DadosMarketing.Salario Anual)\",\"NativeReferenceName\":\"Média de Salario Anual\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Salario Anual\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Média de Salario Anual X Resultado das Campanhas'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 270.72,
+          "width": 508.32,
+          "x": 0.00,
+          "y": 403.20,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8fe2cefa74460c298683\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":99.36,\"z\":1000,\"width\":508.32,\"height\":272.16,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosMarketing.Comprou\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(DadosMarketing.ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comprou\"},\"Name\":\"DadosMarketing.Comprou\",\"NativeReferenceName\":\"Comprou\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.ID)\",\"NativeReferenceName\":\"Contagem de ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Resultado das Campanhas de Marketing'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.16,
+          "width": 508.32,
+          "x": 0.00,
+          "y": 99.36,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a2ff1309b860ab986e00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":593.28,\"y\":97.92,\"z\":4000,\"width\":642.24,\"height\":273.6,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosMarketing.Filhos em Casa\",\"active\":true}],\"Series\":[{\"queryRef\":\"DadosMarketing.Comprou\"}],\"Y\":[{\"queryRef\":\"CountNonNull(DadosMarketing.Filhos em Casa)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Filhos em Casa\"},\"Name\":\"DadosMarketing.Filhos em Casa\",\"NativeReferenceName\":\"Quantos Filhos em Casa\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comprou\"},\"Name\":\"DadosMarketing.Comprou\",\"NativeReferenceName\":\"Comprou\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Filhos em Casa\"}},\"Function\":5},\"Name\":\"CountNonNull(DadosMarketing.Filhos em Casa)\",\"NativeReferenceName\":\"Total\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Filhos em Casa\"}},\"Function\":5}}}]},\"columnProperties\":{\"DadosMarketing.Filhos em Casa\":{\"displayName\":\"Quantos Filhos em Casa\"},\"CountNonNull(DadosMarketing.Filhos em Casa)\":{\"displayName\":\"Total\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Efetividade da Campanha X Número de Filhos'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 273.60,
+          "width": 642.24,
+          "x": 593.28,
+          "y": 97.92,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e58ea7259032ea23b301\",\"layouts\":[{\"id\":0,\"position\":{\"x\":581.76,\"y\":403.2,\"z\":3000,\"width\":653.76,\"height\":270.72,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DadosMarketing.Comprou\",\"active\":true},{\"queryRef\":\"DadosMarketing.Estado Civil\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(DadosMarketing.Numero Visitas WebSite Mes)\"}],\"Columns\":[{\"queryRef\":\"DadosMarketing.Escolaridade\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosMarketing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comprou\"},\"Name\":\"DadosMarketing.Comprou\",\"NativeReferenceName\":\"Comprou\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Numero Visitas WebSite Mes\"}},\"Function\":0},\"Name\":\"Sum(DadosMarketing.Numero Visitas WebSite Mes)\",\"NativeReferenceName\":\"Soma de Numero Visitas WebSite Mes\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Escolaridade\"},\"Name\":\"DadosMarketing.Escolaridade\",\"NativeReferenceName\":\"Escolaridade\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Estado Civil\"},\"Name\":\"DadosMarketing.Estado Civil\",\"NativeReferenceName\":\"Estado Civil\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comprou\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Estado Civil\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DadosMarketing.Comprou\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Comprou\"}}],\"isPinned\":true},{\"queryRefs\":[\"DadosMarketing.Estado Civil\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosMarketing\"}},\"Property\":\"Estado Civil\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'0'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Casado'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"'1'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Sim'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Não'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 270.72,
+          "width": 653.76,
+          "x": 581.76,
+          "y": 403.20,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f82d2bf637e4d088e886\",\"layouts\":[{\"id\":0,\"position\":{\"x\":143.20645905420992,\"y\":0,\"z\":0,\"width\":1008.3506343713956,\"height\":98.91580161476355,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Projeto de Marketing - Análise de campanha de marketing \",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}},{\"value\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"textStyle\":{\"fontSize\":\"24pt\"}},{\"value\":\"Visão Campanha\",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.92,
+          "width": 1008.35,
+          "x": 143.21,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleTidal"
+}

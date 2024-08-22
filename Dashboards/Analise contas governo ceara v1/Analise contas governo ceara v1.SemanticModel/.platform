@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Analise contas governo ceara v1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0704bd8f-cce7-403a-9105-071488852f74"
+  }
+}
